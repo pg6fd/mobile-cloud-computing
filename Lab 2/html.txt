@@ -1,0 +1,34 @@
+HTML code:
+<script
+    src="http://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+<div data-role="page" theme="a" id="home page">
+    <div data-role="header">
+    <h1>Google Map Services</h1>
+    </div>
+    <div data-role="content">
+            <p><a href="#Google map" data-role="button"> Map directions. 
+           </a>
+       </p> <a href="#Geolocation" data-role="button"> geocoding service</a>
+        </div>
+   
+            <div data-role="footer">
+                <h1 align="center"></h1>
+</div>
+</div>
+<div data-role="page" id="Google map">
+    <div data-role="header">
+         <a data-rel="back" data-icon="back">Back</a>
+         <h1>Map directions</h1>
+    </div>
+</div>
+<div data-role="page" id="Geolocation">
+    <div data-role="header">
+         <a data-rel="back" data-icon="back">back</a>
+         <h1>Geocoding Service </h1>
+    </div>
+     <div id="google_maps"></div>
+     <div id="panel">
+      <input id="address" type="textbox" value="Kansas city, MO">
+      <input type="button" value="Geocode" onclick="codeAddress()">
+    </div>
